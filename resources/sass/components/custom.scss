@@ -1,0 +1,26 @@
+.color-input .box {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 0 !important;
+}
+
+.input-hex {
+    width: 200px;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.picker-popup {
+    top: 5px !important;
+    left: 215px !important;
+}
