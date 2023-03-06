@@ -30,11 +30,13 @@ const ColorMixin = {
             copyTextarea.style.position = "fixed";
             copyTextarea.style.opacity = "0";
             copyTextarea.textContent = color;
-        
+
             document.body.appendChild(copyTextarea);
             copyTextarea.select();
             document.execCommand("copy");
             document.body.removeChild(copyTextarea);
+
+            this.$notify("Скопировано");
         }
     }
 }

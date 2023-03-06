@@ -26,6 +26,7 @@
         <Pallets :action="action" :items="pallets" :preloader="preloader"></Pallets>
 
         <None v-if="none"></None>
+        <Notifications position="bottom right" />
     </div>
 </template>
 
