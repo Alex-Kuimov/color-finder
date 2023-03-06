@@ -8,7 +8,7 @@
             <Preloader :preloader="preloader"></Preloader>
             <div class="pallet-item" v-for="item in items" :key="item.id">
                 <div class="pallet-color" :style="'background:'+item">
-                    <div class="pallet-text">
+                    <div class="pallet-text" @click="action.copyColor(item)">
                         {{ item }}
                     </div>
                 </div>
@@ -20,7 +20,7 @@
 <script>
 import Preloader from './Preloader.vue';
 export default {
-    props: ['items', 'preloader'],
+    props: ['items', 'preloader', 'action'],
         components: {
             Preloader,
         },

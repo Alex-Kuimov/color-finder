@@ -21,10 +21,11 @@
 
         <!-- <Form :action="action" :preloader="preloader" v-model="color"></Form> -->
 
+        <Colors :action="action" :items="colors" :preloader="preloader"></Colors>  
+        <Pairs :action="action" :items="pairs" :preloader="preloader"></Pairs>
+        <Pallets :action="action" :items="pallets" :preloader="preloader"></Pallets>
+
         <None v-if="none"></None>
-        <Colors :items="colors" :preloader="preloader"></Colors>  
-        <Pairs :items="pairs" :preloader="preloader"></Pairs>
-        <Pallets :items="pallets" :preloader="preloader"></Pallets>
     </div>
 </template>
 

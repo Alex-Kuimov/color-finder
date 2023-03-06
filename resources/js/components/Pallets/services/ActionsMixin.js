@@ -3,6 +3,7 @@ const ActionMixin = {
         initAction() {
             this.action = {
                 getData: this.getData,
+                copyColor: this.copyColor,
             }
         }
     }
