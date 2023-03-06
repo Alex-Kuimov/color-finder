@@ -36,7 +36,7 @@ const ColorMixin = {
             document.execCommand("copy");
             document.body.removeChild(copyTextarea);
 
-            this.$notify("Скопировано");
+            this.$notify({type: "success", text: "Скопировано в буфер"});
         }
     }
 }

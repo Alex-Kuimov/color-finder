@@ -23,7 +23,7 @@
 
 				<div class="text-end">
 					<button type="button" class="btn btn-warning">
-						Поддержать
+						Поддержать проект
 					</button>
 				</div>
 			</div>

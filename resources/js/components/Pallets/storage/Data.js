@@ -1,5 +1,5 @@
 export const data = {
-    color:'#F0A500',
+    color: '#590569',
     colors: {},
     pairs: {},
     pallets: {},

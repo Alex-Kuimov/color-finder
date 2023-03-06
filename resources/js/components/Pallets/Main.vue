@@ -13,7 +13,7 @@
                 format="hex string" 
                 disable-text-inputs>
             </ColorInput>
-            <button class="btn btn-warning search-btn mt-4">
+            <button class="btn btn-dark search-btn mt-4">
                 <span>Подобать цвет</span>
                 <span v-if="preloader" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             </button>
