@@ -37,8 +37,8 @@
     import Form from './Form.vue';
     import None from './None.vue';
     import ColorMixin from './services/ColorMixin.js';
-    import ActionsMixin from './services/ActionsMixin,js';
-    import { data } from './storage/Data,js';
+    import ActionsMixin from './services/ActionsMixin.js';
+    import { data } from './storage/Data.js';
 
     export default {
         components: {
