@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ParserController;
 
 /*
@@ -16,4 +17,5 @@ use App\Http\Controllers\ParserController;
  */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('parser', [ParserController::class, 'getData'])->name('parser');
+Route::get('about/', [PageController::class, 'about'])->name('about');
+//Route::get('parser', [ParserController::class, 'getData'])->name('parser');
