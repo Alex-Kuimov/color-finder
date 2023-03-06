@@ -24,3 +24,51 @@
     top: 5px !important;
     left: 215px !important;
 }
+
+.btn-find {
+    background: #22A39F;
+    color: #fff;
+    border-color: #22A39F;
+}
+.btn-find:hover {
+    background: #2A7886;
+    color: #fff;
+    border-color: #2A7886;
+}
+
+.btn-find:active {
+    background: #2A7886!important;
+    color: #fff!important;
+    border-color: #2A7886!important;
+}
+
+.btn-don {
+    background: #EEEEEE;
+    border-color: #EEEEEE;
+    color: #222222;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.btn-don:hover {
+    background: #DDDDDD;
+    border-color: #DDDDDD;
+    color: #222222;
+}
+
+.btn-don:active {
+    background: #DDDDDD!important;
+    border-color: #DDDDDD!important;
+    color: #222222!important;
+}
+
+.vue-notification {
+    &.success {
+        background: #22A39F!important;
+        border-left-color: #2A7886!important;
+    }
+}

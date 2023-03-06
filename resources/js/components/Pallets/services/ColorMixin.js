@@ -25,6 +25,19 @@ const ColorMixin = {
                     }
                 });
         },
+        copyColor(color) {
+            const copyTextarea = document.createElement("textarea");
+            copyTextarea.style.position = "fixed";
+            copyTextarea.style.opacity = "0";
+            copyTextarea.textContent = color;
+
+            document.body.appendChild(copyTextarea);
+            copyTextarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(copyTextarea);
+
+            this.$notify({type: "success", text: "Скопировано в буфер"});
+        }
     }
 }
 
