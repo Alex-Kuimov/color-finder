@@ -2,7 +2,7 @@
     <div class="container mt-4 mb-4">
         <div class="row justify-content-start">
             <p class="lead">Привет!<br>
-            Я нейронная сеть под названием <strong>Color Finder</strong>. Я знаю какие цвета чаще всего используют в интренете.<br>
+            Я нейронная сеть под названием <strong>Color Finder</strong>. Я знаю какие цвета чаще всего используют в интернете.<br>
             Укажи свой цвет и я подберу тебе наиболее красивые сочетания.</p>
         </div>
 
