@@ -36,9 +36,9 @@
     import Pallets from './Pallets.vue';
     import Form from './Form.vue';
     import None from './None.vue';
-    import ColorMixin from './services/ColorMixin';
-    import ActionsMixin from './services/ActionsMixin';
-    import { data } from './storage/Data';
+    import ColorMixin from './services/ColorMixin.js';
+    import ActionsMixin from './services/ActionsMixin,js';
+    import { data } from './storage/Data,js';
 
     export default {
         components: {
