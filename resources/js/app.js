@@ -16,8 +16,8 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import Pallets from './components/pallets/Main.vue';
-app.component('pallets', Pallets);
+// import Pallets from './components/pallets/Main.vue';
+// app.component('pallets', Pallets);
 
 /**
  * The following block of code may be used to automatically register your
