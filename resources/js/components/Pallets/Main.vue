@@ -7,12 +7,13 @@
         </div>
 
         <Form v-model="color" :action="action" :preloader="preloader"></Form>
-
-        <Colors :action="action" :items="colors" :preloader="preloader"></Colors>  
-        <Pairs :action="action" :items="pairs" :preloader="preloader"></Pairs>
-        <Pallets :action="action" :items="pallets" :preloader="preloader"></Pallets>
+ 
+        <Items :action="action" :items="colors" :preloader="preloader" :text="'Твой цвет красивый, но человеки чаще всего используют вот эти:'"></Items>
+        <Items :action="action" :items="pairs" :preloader="preloader" :text="'Попробуй вот эти сочетания:'"></Items>
+        <Items :action="action" :items="pallets" :preloader="preloader" :text="'А вот еще палеты:'"></Items>
 
         <None v-if="none"></None>
+
         <Notifications position="bottom right" />
     </div>
 </template>
@@ -20,9 +21,7 @@
 <script>
     import ColorInput from 'vue-color-input';
     import Preloader from './Preloader.vue';
-    import Colors from './Colors.vue';
-    import Pairs from './Pairs.vue';
-    import Pallets from './Pallets.vue';
+    import Items from './Items.vue';
     import Form from './Form.vue';
     import None from './None.vue';
     import ColorMixin from './services/ColorMixin.js';
@@ -33,9 +32,7 @@
         components: {
             ColorInput,
             Preloader,
-            Colors,
-            Pairs,
-            Pallets,
+            Items,
             Form,
             None
         },
@@ -50,10 +47,3 @@
         },
     }
 </script>
-
-<style>
-.color-input .box {
-    width: 150px;
-    height: 150px;
-}
-</style>
