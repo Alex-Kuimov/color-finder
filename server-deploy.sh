@@ -8,9 +8,9 @@ php artisan down
 echo "Get from git"
 git pull origin master
 
-# echo "Install Frontend"
-# npm install
-# npm run build
+echo "Install Frontend"
+npm install
+npm run build
 
 echo "Migrate DB"
 php artisan migrate --force
