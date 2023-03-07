@@ -1,16 +1,14 @@
 <template>
     <div class="container mt-4 mb-4">
         <div class="row justify-content-start">
-            <p class="lead">Привет!<br>
-            Я нейронная сеть под названием <strong>Color Finder</strong>. Я знаю какие цвета чаще всего используют в интернете.<br>
-            Укажи свой цвет и я подберу тебе наиболее красивые сочетания.</p>
+            <p class="lead" v-html="mainText"></p>
         </div>
 
         <Form v-model="color" :action="action" :preloader="preloader"></Form>
  
-        <Items :action="action" :items="colors" :preloader="preloader" :text="'Твой цвет красивый, но человеки чаще всего используют вот эти:'"></Items>
-        <Items :action="action" :items="pairs" :preloader="preloader" :text="'Попробуй вот эти сочетания:'"></Items>
-        <Items :action="action" :items="pallets" :preloader="preloader" :text="'А вот еще палеты:'"></Items>
+        <Items :action="action" :items="colors" :preloader="preloader" :text="colorsText"></Items>
+        <Items :action="action" :items="pairs" :preloader="preloader" :text="pairsText"></Items>
+        <Items :action="action" :items="pallets" :preloader="preloader" :text="palletsText"></Items>
 
         <None v-if="none"></None>
 

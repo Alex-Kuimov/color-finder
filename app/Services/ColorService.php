@@ -6,7 +6,7 @@ use App\Models\DataColor;
 
 class ColorService
 {
-    public function find($color)
+    public function findPairs($color)
     {
         $colors = [];
         $result = [];
@@ -14,7 +14,7 @@ class ColorService
         $items = $this->findAvailableColors($color);
 
         foreach ($items as $item) {
-            $res = $this->findPairs($item);
+            $res = $this->findDataSet($item);
             if ($res) {
                 foreach ($res as $cl) {
                     $colors[] = $cl;
@@ -42,6 +42,10 @@ class ColorService
             if ($delta >= 2 and $delta <= 50) {
                 $found[$i] = $availableColors[$i];
             }
+        }
+
+        if (in_array($color, $availableColors)) {
+            array_unshift($found, $color);
         }
 
         return array_slice(array_values($found), 0, 12);
@@ -83,7 +87,7 @@ class ColorService
         return $arr;
     }
 
-    private function findPairs($color)
+    private function findDataSet($color)
     {
         if (empty($color)) {
             return null;
