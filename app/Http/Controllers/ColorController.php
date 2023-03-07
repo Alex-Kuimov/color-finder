@@ -10,8 +10,8 @@ class ColorController extends Controller
     public function getData(Request $request, ColorService $color)
     {
         return response()->json([
-            'pairs' => $color->find($request->color),
             'colors' => $color->findAvailableColors($request->color),
+            'pairs' => $color->findPairs($request->color),
             'pallets' => $color->findPalletColors($request->color),
         ]);
     }

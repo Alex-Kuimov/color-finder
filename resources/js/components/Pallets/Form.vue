@@ -3,6 +3,7 @@
         <input 
             type="text" 
             class="mb-4 form-control pl-1 input-hex"
+            @change="changeText()"
             :value="modelValue" 
             @input="$emit('update:modelValue', $event.target.value)"
         >
@@ -11,7 +12,7 @@
             v-model="color"
             format="hex string" 
             disable-text-inputs
-            @saturationInput="onChange"
+            @saturationInput="changeColor()"
         >
         </ColorInput>
 
@@ -39,8 +40,11 @@ export default {
         }
     },
     methods: {
-        onChange() {
+        changeColor() {
             this.$emit('update:modelValue', this.color);
+        },
+        changeText() {
+            this.color = this.modelValue;
         }
     },
     created() {

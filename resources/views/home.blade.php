@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Color Finder')
+@section('title', 'ColorFinder')
 
 @section('content')
 <pallets></pallets>
