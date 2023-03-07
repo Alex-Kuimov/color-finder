@@ -9,8 +9,8 @@ echo "Get from git"
 git pull origin master
 
 echo "Install Frontend"
-npm install
-npm run build
+/root/.nvm/versions/node/v19.7.0/bin/npm install
+/root/.nvm/versions/node/v19.7.0/bin/npm run build
 
 echo "Migrate DB"
 php artisan migrate --force
