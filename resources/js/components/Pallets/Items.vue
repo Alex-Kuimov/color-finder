@@ -28,8 +28,8 @@
 import Preloader from './Preloader.vue';
 export default {
     props: ['items', 'preloader', 'text', 'action'],
-        components: {
-            Preloader,
-        },
+    components: {
+        Preloader,
+    },
 }
 </script>

@@ -7,7 +7,8 @@
 import './bootstrap';
 import '../sass/app.scss';
 import { createApp } from 'vue';
-import Notifications from '@kyvg/vue3-notification'
+import Notifications from '@kyvg/vue3-notification';
+
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
  * registering components with the application instance so they are ready
@@ -17,7 +18,7 @@ import Notifications from '@kyvg/vue3-notification'
 const app = createApp({});
 app.use(Notifications);
 
-import Pallets from '../../resources/js/components/Pallets/Main.vue';
+import Pallets from '../../resources/js/components/Pallets/Index.vue';
 app.component('pallets', Pallets);
 
 
