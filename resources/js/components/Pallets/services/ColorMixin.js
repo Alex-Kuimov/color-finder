@@ -25,6 +25,13 @@ const ColorMixin = {
                     }
                 });
         },
+        openModal(page) {
+            this.modal.show = true;
+            this.modal.content = this.content[page];
+        },
+        closeModal() {
+            this.modal.show = false;
+        },
         copyColor(color) {
             const copyTextarea = document.createElement("textarea");
             copyTextarea.style.position = "fixed";
@@ -36,7 +43,7 @@ const ColorMixin = {
             document.execCommand("copy");
             document.body.removeChild(copyTextarea);
 
-            this.$notify({type: "success", text: "Скопировано в буфер"});
+            this.$notify({ type: "success", text: "Скопировано в буфер" });
         }
     }
 }

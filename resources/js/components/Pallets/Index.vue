@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column h-100">
-        <Header></Header>
+        <Header :modal="modal" :action="action"></Header>
         <div class="container mt-4 mb-4">
             <Welcome :text="mainText"></Welcome>
             <Form v-model="color" :action="action" :preloader="preloader"></Form>
