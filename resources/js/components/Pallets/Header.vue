@@ -17,7 +17,7 @@
 			</div>
 		</div>
         <Modal v-model="modal.show">
-            <div class="modal-mask">
+            <div class="modal-mask" @click="action.closeModal()">
                 <div class="modal-wrapper">
                     <div class="modal-container">
                         <span class="modal-close" @click="action.closeModal()">

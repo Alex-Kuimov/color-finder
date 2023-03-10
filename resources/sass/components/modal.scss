@@ -33,16 +33,6 @@
         width: 100%;
     }
 }
-    
-.modal-enter-from, .modal-leave-to {
-    opacity: 0;
-}
-  
-.modal-enter-active .modal-container,
-.modal-leave-active .modal-container {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
 
 .modal-close {
     position: absolute;

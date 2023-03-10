@@ -15,10 +15,16 @@ export const data = {
         content: '',
     },
     content: {
-        about: `<p class="lead">
-            ColorFinder - это нейросеть, которая умеет подбирать красивые цветовые сочетания для веб-дизайна.
-        </p>
-        <p class="lead">Автор проекта: <a href="https://t.me/Spoot">Александр Куимов</a></p>`,
-        donation: `<script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe src="https://forms.yandex.ru/u/6409a4b490fa7b11d1db822e/?iframe=1" frameborder="0" name="ya-form-6409a4b490fa7b11d1db822e" width="650"></iframe>`,
+        about: `
+            <h4>О проекте</h4>
+            <p class="lead">
+                ColorFinder - это нейросеть, которая умеет подбирать красивые цветовые сочетания для веб-дизайна.
+            </p>
+            <p class="lead">Автор проекта: <a href="https://t.me/Spoot">Александр Куимов</a></p>
+        `,
+        donation: `
+            <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+            <iframe src="https://forms.yandex.ru/u/6409a4b490fa7b11d1db822e/?iframe=1" frameborder="0" name="ya-form-6409a4b490fa7b11d1db822e" width="650"></iframe>
+        `,
     }
 }
